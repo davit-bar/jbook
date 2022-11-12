@@ -40,7 +40,7 @@ const App = () => {
 
     setCode(result.outputFiles[0].text);
   };
-
+  // main component as of now
   return (
     <div>
       <textarea
