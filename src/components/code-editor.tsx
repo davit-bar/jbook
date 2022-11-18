@@ -63,7 +63,7 @@ const CodeEditor: React.FunctionComponent<CodeEditorProps> = ({
         }}
         theme="dark"
         language="javascript"
-        height="500px"
+        height="100%"
       />
     </div>
   );
