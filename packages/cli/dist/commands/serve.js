@@ -3,8 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.serveCommand = void 0;
 const commander_1 = require("commander");
 exports.serveCommand = new commander_1.Command()
-    .command("serve")
+    .command("serve [filename]")
     .description("Open a file for editing")
-    .action(() => {
-    console.log("toit");
+    .option("-p, --port <number>", "port to run server on", "4005")
+    .action((filename = "ntebook.js", options) => {
+    console.log(filename, options);
 });
